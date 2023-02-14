@@ -24,10 +24,10 @@ my $url = 'https://api.nylas.com/events?notify_participants=true';
 # Body of the API call
 my $data = {title => "Learn Perl with Nylas",
                    when => {start_time => 1675872000, end_time => 1675873800},
-                   location => "Blag\'s Den",
+                   location => "YOUR LOCATION",
                    calendar_id => $calendar_id,
-                   participants =>  [{email => "atejada\@gmail.com",
-                                             name => "Blag"}]};
+                   participants =>  [{email => "YOUREMAIL\@YOURPROVIDER.com",
+                                             name => "YOURNAME"}]};
 # Encode data as JSON
 my $encoded_data = encode_utf8(encode_json($data));
 # Define API endpoint call
