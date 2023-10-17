@@ -15,6 +15,7 @@ Then install the following packages:
 ```bash
 $ cpanm Mozilla::CA
 $ cpanm Dotenv
+$ cpanm Mojo::UserAgent
 ```
 
 ### Gather environment variables
@@ -22,8 +23,10 @@ $ cpanm Dotenv
 You'll need the following values:
 
 ```text
-ACCESS_TOKEN=<ACCESS_TOKEN>
+API_KEY_V3=<API V3 KEY>
 CALENDAR_ID=<CALENDAR_ID>
+GUEST_EMAIL=<GUEST EMAIL>
+NAME_EMAIL=<GUEST NAME>
 ```
 
 Add the above values to a new `.env` file:
@@ -37,7 +40,7 @@ $ touch .env # Then add your env variables
 Run the app:
 
 ```bash
-$ perl CreateEvent.pl
+$ perl CreateEvent_V3.pl
 ```
 
 When you run it, it will display the newly created event
